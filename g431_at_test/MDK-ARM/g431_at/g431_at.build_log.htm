@@ -1,0 +1,366 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: tang Administrator, tzg, LIC=03C6R-KJZ2D-569Q2-9DI65-WAZN4-CSDSE
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+F:\project\test5gec210129\test5gec_base\g431_at_test\MDK-ARM\g431_at.uvprojx
+Project File Date:  01/29/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'g431_at'
+assembling startup_stm32g431xx.s...
+compiling adc.c...
+compiling gpio.c...
+compiling i2c.c...
+compiling rtc.c...
+compiling spi.c...
+compiling main.c...
+compiling usart.c...
+compiling stm32g4xx_ll_adc.c...
+compiling stm32g4xx_it.c...
+compiling stm32g4xx_hal_adc_ex.c...
+compiling stm32g4xx_hal_msp.c...
+compiling stm32g4xx_hal_adc.c...
+compiling stm32g4xx_hal.c...
+compiling stm32g4xx_hal_rcc.c...
+compiling stm32g4xx_hal_rcc_ex.c...
+compiling stm32g4xx_hal_flash.c...
+compiling stm32g4xx_hal_gpio.c...
+compiling stm32g4xx_hal_flash_ramfunc.c...
+compiling stm32g4xx_hal_flash_ex.c...
+compiling stm32g4xx_hal_exti.c...
+compiling stm32g4xx_hal_dma.c...
+compiling stm32g4xx_hal_pwr.c...
+compiling stm32g4xx_hal_cortex.c...
+compiling stm32g4xx_hal_dma_ex.c...
+compiling stm32g4xx_hal_i2c.c...
+compiling stm32g4xx_hal_pwr_ex.c...
+compiling stm32g4xx_hal_i2c_ex.c...
+compiling stm32g4xx_hal_rtc_ex.c...
+compiling stm32g4xx_hal_spi.c...
+compiling stm32g4xx_hal_spi_ex.c...
+compiling stm32g4xx_hal_rtc.c...
+compiling system_stm32g4xx.c...
+compiling stm32g4xx_hal_tim_ex.c...
+compiling stm32g4xx_hal_tim.c...
+assembling port_s.S...
+compiling stm32g4xx_hal_uart.c...
+compiling stm32g4xx_hal_uart_ex.c...
+compiling tos_cpu.c...
+compiling tos_barrier.c...
+compiling tos_bitmap.c...
+compiling tos_binary_heap.c...
+compiling port_c.c...
+compiling tos_global.c...
+compiling tos_countdownlatch.c...
+compiling tos_completion.c...
+compiling tos_char_fifo.c...
+compiling tos_event.c...
+compiling tos_mail_queue.c...
+compiling tos_mmheap.c...
+compiling tos_pend.c...
+compiling tos_message_queue.c...
+compiling tos_mmblk.c...
+compiling tos_mutex.c...
+compiling tos_robin.c...
+compiling tos_priority_queue.c...
+compiling tos_priority_mail_queue.c...
+compiling tos_ring_queue.c...
+compiling tos_priority_message_queue.c...
+compiling tos_rwlock.c...
+compiling tos_sys.c...
+compiling tos_sem.c...
+compiling tos_stopwatch.c...
+compiling tos_sched.c...
+compiling tos_task.c...
+compiling tos_tick.c...
+compiling cmsis_os.c...
+compiling tos_timer.c...
+compiling sram.c...
+compiling tos_time.c...
+compiling bsp.c...
+..\AppDriver\Inc\bsp.h(79): warning:  #1295-D: Deprecated declaration DevInit - give arg types
+  extern void DevInit();
+..\Func\Inc\fs.h(43): warning:  #1295-D: Deprecated declaration fs_init - give arg types
+  extern void fs_init();
+..\Func\Inc\fs.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Func\Inc\mqttsub.h(18): warning:  #1295-D: Deprecated declaration mqtt_conn_fun - give arg types
+  extern int mqtt_conn_fun();
+..\Func\Inc\mqttsub.h(19): warning:  #1295-D: Deprecated declaration mqtt_sub_fun - give arg types
+  extern int mqtt_sub_fun();
+..\Func\Inc\mqttsub.h(20): warning:  #1295-D: Deprecated declaration mqttsub_init - give arg types
+  extern void mqttsub_init();
+..\Func\Inc\mqttsub.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Func\Inc\mqttpub.h(24): warning:  #1295-D: Deprecated declaration mqtt_sensor_pub - give arg types
+  extern int mqtt_sensor_pub();
+..\Func\Inc\mqttpub.h(25): warning:  #1295-D: Deprecated declaration mqtt_alarms_pub - give arg types
+  extern int mqtt_alarms_pub();
+..\Func\Inc\mqttpub.h(26): warning:  #1295-D: Deprecated declaration mqttpub_init - give arg types
+  extern void mqttpub_init();
+..\AppDriver\Src\bsp.c: 10 warnings, 0 errors
+compiling task.c...
+..\Func\Inc\wifi.h(16): warning:  #1295-D: Deprecated declaration esp32_test_wifi - give arg types
+  extern void esp32_test_wifi();
+..\Func\Inc\wifi.h(17): warning:  #1295-D: Deprecated declaration esp32_join_wifi - give arg types
+  extern int esp32_join_wifi();
+..\AppDriver\Inc\bsp.h(79): warning:  #1295-D: Deprecated declaration DevInit - give arg types
+  extern void DevInit();
+..\Func\Inc\ble.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Func\Inc\ntp.h(16): warning:  #1295-D: Deprecated declaration set_sample_time - give arg types
+  extern int set_sample_time();
+..\Func\Inc\ntp.h(17): warning:  #1295-D: Deprecated declaration again_set_sample_time - give arg types
+  extern int again_set_sample_time();
+..\Func\Inc\ntp.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Task\Src\task.c(143): warning:  #111-D: statement is unreachable
+  	return;
+..\Task\Src\task.c(32): warning:  #177-D: variable "flag_match"  was declared but never referenced
+  	k_event_flag_t flag_match;
+..\Task\Src\task.c: 9 warnings, 0 errors
+compiling LIS2DS12_ACC_driver.c...
+compiling STTS75_driver.c...
+compiling esp32.c...
+..\Func\Inc\mqttsub.h(18): warning:  #1295-D: Deprecated declaration mqtt_conn_fun - give arg types
+  extern int mqtt_conn_fun();
+..\Func\Inc\mqttsub.h(19): warning:  #1295-D: Deprecated declaration mqtt_sub_fun - give arg types
+  extern int mqtt_sub_fun();
+..\Func\Inc\mqttsub.h(20): warning:  #1295-D: Deprecated declaration mqttsub_init - give arg types
+  extern void mqttsub_init();
+..\Func\Inc\mqttsub.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\AppDriver\Inc\bsp.h(79): warning:  #1295-D: Deprecated declaration DevInit - give arg types
+  extern void DevInit();
+..\AppDriver\Src\esp32.c: 5 warnings, 0 errors
+compiling battery.c...
+compiling nsampletask.c...
+..\AppDriver\Inc\bsp.h(79): warning:  #1295-D: Deprecated declaration DevInit - give arg types
+  extern void DevInit();
+..\Func\Inc\mqttpub.h(24): warning:  #1295-D: Deprecated declaration mqtt_sensor_pub - give arg types
+  extern int mqtt_sensor_pub();
+..\Func\Inc\mqttpub.h(25): warning:  #1295-D: Deprecated declaration mqtt_alarms_pub - give arg types
+  extern int mqtt_alarms_pub();
+..\Func\Inc\mqttpub.h(26): warning:  #1295-D: Deprecated declaration mqttpub_init - give arg types
+  extern void mqttpub_init();
+..\Task\Src\nsampletask.c: 4 warnings, 0 errors
+compiling mqttsubtask.c...
+..\AppDriver\Inc\bsp.h(79): warning:  #1295-D: Deprecated declaration DevInit - give arg types
+  extern void DevInit();
+..\Func\Inc\mqttsub.h(18): warning:  #1295-D: Deprecated declaration mqtt_conn_fun - give arg types
+  extern int mqtt_conn_fun();
+..\Func\Inc\mqttsub.h(19): warning:  #1295-D: Deprecated declaration mqtt_sub_fun - give arg types
+  extern int mqtt_sub_fun();
+..\Func\Inc\mqttsub.h(20): warning:  #1295-D: Deprecated declaration mqttsub_init - give arg types
+  extern void mqttsub_init();
+..\Func\Inc\mqttsub.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Task\Src\mqttsubtask.c: 5 warnings, 0 errors
+compiling pmtask.c...
+..\AppDriver\Inc\bsp.h(79): warning:  #1295-D: Deprecated declaration DevInit - give arg types
+  extern void DevInit();
+..\Func\Inc\mqttpub.h(24): warning:  #1295-D: Deprecated declaration mqtt_sensor_pub - give arg types
+  extern int mqtt_sensor_pub();
+..\Func\Inc\mqttpub.h(25): warning:  #1295-D: Deprecated declaration mqtt_alarms_pub - give arg types
+  extern int mqtt_alarms_pub();
+..\Func\Inc\mqttpub.h(26): warning:  #1295-D: Deprecated declaration mqttpub_init - give arg types
+  extern void mqttpub_init();
+..\Task\Src\pmtask.c(53): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      if(4.2 < bat_level && bat_level <= 5.0)
+..\Task\Src\pmtask.c(53): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      if(4.2 < bat_level && bat_level <= 5.0)
+..\Task\Src\pmtask.c(57): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      else if(3.2 < bat_level && bat_level <= 4.2)
+..\Task\Src\pmtask.c(57): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      else if(3.2 < bat_level && bat_level <= 4.2)
+..\Task\Src\pmtask.c(61): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      else if(bat_level <= 3.2)
+..\Task\Src\pmtask.c: 9 warnings, 0 errors
+compiling tsampletask.c...
+..\AppDriver\Inc\bsp.h(79): warning:  #1295-D: Deprecated declaration DevInit - give arg types
+  extern void DevInit();
+..\Func\Inc\mqttpub.h(24): warning:  #1295-D: Deprecated declaration mqtt_sensor_pub - give arg types
+  extern int mqtt_sensor_pub();
+..\Func\Inc\mqttpub.h(25): warning:  #1295-D: Deprecated declaration mqtt_alarms_pub - give arg types
+  extern int mqtt_alarms_pub();
+..\Func\Inc\mqttpub.h(26): warning:  #1295-D: Deprecated declaration mqttpub_init - give arg types
+  extern void mqttpub_init();
+..\Task\Src\tsampletask.c(53): warning:  #111-D: statement is unreachable
+  			printf("finish temp sample\n");
+..\Task\Src\tsampletask.c: 5 warnings, 0 errors
+compiling ledtask.c...
+..\Task\Src\ledtask.c(24): warning:  #1-D: last line of file ends without a newline
+  /*********PM_TASK END***********/
+..\Task\Src\ledtask.c: 1 warning, 0 errors
+compiling vsampletask.c...
+..\AppDriver\Inc\bsp.h(79): warning:  #1295-D: Deprecated declaration DevInit - give arg types
+  extern void DevInit();
+..\Func\Inc\mqttpub.h(24): warning:  #1295-D: Deprecated declaration mqtt_sensor_pub - give arg types
+  extern int mqtt_sensor_pub();
+..\Func\Inc\mqttpub.h(25): warning:  #1295-D: Deprecated declaration mqtt_alarms_pub - give arg types
+  extern int mqtt_alarms_pub();
+..\Func\Inc\mqttpub.h(26): warning:  #1295-D: Deprecated declaration mqttpub_init - give arg types
+  extern void mqttpub_init();
+..\Task\Src\vsampletask.c: 4 warnings, 0 errors
+compiling wifi.c...
+..\Func\Inc\wifi.h(16): warning:  #1295-D: Deprecated declaration esp32_test_wifi - give arg types
+  extern void esp32_test_wifi();
+..\Func\Inc\wifi.h(17): warning:  #1295-D: Deprecated declaration esp32_join_wifi - give arg types
+  extern int esp32_join_wifi();
+..\Func\Inc\fs.h(43): warning:  #1295-D: Deprecated declaration fs_init - give arg types
+  extern void fs_init();
+..\Func\Inc\fs.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Func\Src\wifi.c(114): warning:  #177-D: variable "rc"  was declared but never referenced
+  	int rc;
+..\Func\Src\wifi.c: 5 warnings, 0 errors
+compiling mqttpubtask.c...
+..\AppDriver\Inc\bsp.h(79): warning:  #1295-D: Deprecated declaration DevInit - give arg types
+  extern void DevInit();
+..\Func\Inc\mqttpub.h(24): warning:  #1295-D: Deprecated declaration mqtt_sensor_pub - give arg types
+  extern int mqtt_sensor_pub();
+..\Func\Inc\mqttpub.h(25): warning:  #1295-D: Deprecated declaration mqtt_alarms_pub - give arg types
+  extern int mqtt_alarms_pub();
+..\Func\Inc\mqttpub.h(26): warning:  #1295-D: Deprecated declaration mqttpub_init - give arg types
+  extern void mqttpub_init();
+..\Func\Inc\ntp.h(16): warning:  #1295-D: Deprecated declaration set_sample_time - give arg types
+  extern int set_sample_time();
+..\Func\Inc\ntp.h(17): warning:  #1295-D: Deprecated declaration again_set_sample_time - give arg types
+  extern int again_set_sample_time();
+..\Func\Inc\ntp.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Task\Src\mqttpubtask.c(70): warning:  #1-D: last line of file ends without a newline
+  /*********MQTTPUB_TASK END***********/
+..\Task\Src\mqttpubtask.c: 8 warnings, 0 errors
+compiling tos_hal_uart.c...
+compiling itcallback.c...
+..\Func\Inc\ntp.h(16): warning:  #1295-D: Deprecated declaration set_sample_time - give arg types
+  extern int set_sample_time();
+..\Func\Inc\ntp.h(17): warning:  #1295-D: Deprecated declaration again_set_sample_time - give arg types
+  extern int again_set_sample_time();
+..\Func\Inc\ntp.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\AppDriver\Inc\bsp.h(79): warning:  #1295-D: Deprecated declaration DevInit - give arg types
+  extern void DevInit();
+..\Func\Src\itcallback.c: 4 warnings, 0 errors
+compiling tos_at.c...
+compiling mqttpub.c...
+..\Func\Inc\mqttpub.h(24): warning:  #1295-D: Deprecated declaration mqtt_sensor_pub - give arg types
+  extern int mqtt_sensor_pub();
+..\Func\Inc\mqttpub.h(25): warning:  #1295-D: Deprecated declaration mqtt_alarms_pub - give arg types
+  extern int mqtt_alarms_pub();
+..\Func\Inc\mqttpub.h(26): warning:  #1295-D: Deprecated declaration mqttpub_init - give arg types
+  extern void mqttpub_init();
+..\AppDriver\Inc\bsp.h(79): warning:  #1295-D: Deprecated declaration DevInit - give arg types
+  extern void DevInit();
+..\Func\Inc\fs.h(43): warning:  #1295-D: Deprecated declaration fs_init - give arg types
+  extern void fs_init();
+..\Func\Inc\fs.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Func\Src\mqttpub.c(167): warning:  #940-D: missing return statement at end of non-void function "mqtt_sensor_pub" 
+  }
+..\Func\Src\mqttpub.c(101): warning:  #177-D: variable "msg_len"  was declared but never referenced
+  	uint16_t msg_len = 0;
+..\Func\Src\mqttpub.c(197): warning:  #940-D: missing return statement at end of non-void function "mqtt_alarms_pub" 
+  }
+..\Func\Src\mqttpub.c: 9 warnings, 0 errors
+compiling sal_module_wrapper.c...
+compiling ble.c...
+..\Func\Inc\ble.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Func\Inc\fs.h(43): warning:  #1295-D: Deprecated declaration fs_init - give arg types
+  extern void fs_init();
+..\Func\Inc\fs.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Func\Src\ble.c(134): warning:  #1-D: last line of file ends without a newline
+  }
+..\Func\Src\ble.c(26): warning:  #177-D: function "esp32ble_echo_close"  was declared but never referenced
+  static int esp32ble_echo_close(void)
+..\Func\Src\ble.c: 5 warnings, 0 errors
+compiling mqttsub.c...
+..\Func\Inc\mqttsub.h(18): warning:  #1295-D: Deprecated declaration mqtt_conn_fun - give arg types
+  extern int mqtt_conn_fun();
+..\Func\Inc\mqttsub.h(19): warning:  #1295-D: Deprecated declaration mqtt_sub_fun - give arg types
+  extern int mqtt_sub_fun();
+..\Func\Inc\mqttsub.h(20): warning:  #1295-D: Deprecated declaration mqttsub_init - give arg types
+  extern void mqttsub_init();
+..\Func\Inc\mqttsub.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Func\Inc\fs.h(43): warning:  #1295-D: Deprecated declaration fs_init - give arg types
+  extern void fs_init();
+..\Func\Inc\fs.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\AppDriver\Inc\bsp.h(79): warning:  #1295-D: Deprecated declaration DevInit - give arg types
+  extern void DevInit();
+..\Func\Src\mqttsub.c(197): warning:  #177-D: variable "s_value"  was declared but never referenced
+  	char s_value[MAX_SUBVALUE_STR] = {0};
+..\Func\Src\mqttsub.c: 8 warnings, 0 errors
+compiling fs.c...
+..\Func\Inc\fs.h(43): warning:  #1295-D: Deprecated declaration fs_init - give arg types
+  extern void fs_init();
+..\Func\Inc\fs.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Func\Src\fs.c(28): warning:  #940-D: missing return statement at end of non-void function "fs_read_file" 
+  }
+..\Func\Src\fs.c: 3 warnings, 0 errors
+compiling ntp.c...
+..\Func\Inc\ntp.h(16): warning:  #1295-D: Deprecated declaration set_sample_time - give arg types
+  extern int set_sample_time();
+..\Func\Inc\ntp.h(17): warning:  #1295-D: Deprecated declaration again_set_sample_time - give arg types
+  extern int again_set_sample_time();
+..\Func\Inc\ntp.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Func\Src\ntp.c(225): warning:  #940-D: missing return statement at end of non-void function "set_alarm_time" 
+  }
+..\Func\Src\ntp.c: 4 warnings, 0 errors
+compiling esp8266.c...
+linking...
+Program Size: Code=43832 RO-data=1456 RW-data=180 ZI-data=32428  
+FromELF: creating hex file...
+"g431_at\g431_at.axf" - 0 Error(s), 98 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.2.0.pack
+                Keil.STM32G4xx_DFP.1.2.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_g431_at
+  C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Build Time Elapsed:  00:01:30
+</pre>
+</body>
+</html>
