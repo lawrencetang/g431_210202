@@ -98,3 +98,4 @@ g431_at\bsp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 g431_at\bsp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
 g431_at\bsp.o: ..\Func\Inc\mqttsub.h
 g431_at\bsp.o: ..\Func\Inc\mqttpub.h
+g431_at\bsp.o: ..\Func\Inc\tcpsend.h

@@ -9,6 +9,10 @@
 #include "task.h"
 #include "bsp.h"
 #include "mqttsub.h"
+#include "tcpsend.h"
+
+#define TCP_CONN_URL "10.1.205.57"
+#define TCP_CONN_PORT "6666"
 
 /*********MQTTSUB_TASK BEGIN***********/
 k_task_t mqttsub_task;
@@ -28,6 +32,7 @@ void mqttsub_task_entry(void *arg)
 	{
 		printf("can not conn mqtt");
 		//lt:不能发信号给ntp任务去设置,设置网络状态
+		return;
 	}
 	
 	g_u8MqttOver = MQTT_OVER;
@@ -39,8 +44,23 @@ void mqttsub_task_entry(void *arg)
 	{
 		printf("can not sub mqtt");
 		//lt:设置不能订阅的网络状态
+		return;
 	}
 	//lt:设置mqtt订阅网络状态,status!!
+	
+	//lt:由于内部ram不够,把连接tcp的暂时放在这里
+	if(tcp_conn(TCP_CONN_URL, TCP_CONN_PORT) < 0)
+	{
+		printf("can not conn tcp");
+		//lt:释放mqtt连接
+		mqtt_clean();
+		return;
+	}
+	
+	printf("success conn tcp");
+	
+	g_u8TcpOver = TCP_OVER;
+	
 	
 	while(1)
 	{
@@ -61,5 +81,7 @@ void mqttsub_task_entry(void *arg)
 	  }
 		tos_task_delay(20);
 	}
+	
+	return;
 }
 /*********MQTTSUB_TASK END***********/

@@ -12,8 +12,8 @@
 #include "bsp.h"
 #include "fs.h"
 
-#define MAX_MQTT_PUB_ALARMS_MSG 4096
-#define MAX_MQTT_PUB_SENSORTD_MSG 4096
+#define MAX_MQTT_PUB_ALARMS_MSG 2048
+#define MAX_MQTT_PUB_SENSORTD_MSG 2048
 
 #if (MAX_XYZSAMPLE_CNT == 20)
 #define XYZDATA_PRINTF_D "%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f"
@@ -22,7 +22,7 @@
 #define YDATA_PRINTF_VAL pyvibValue[0], pyvibValue[1], pyvibValue[2], pyvibValue[3], pyvibValue[4], pyvibValue[5], pyvibValue[6], pyvibValue[7], pyvibValue[8], pyvibValue[9], pyvibValue[10], pyvibValue[11], pyvibValue[12], pyvibValue[13], pyvibValue[14], pyvibValue[15], pyvibValue[16], pyvibValue[17], pyvibValue[18], pyvibValue[19]
 #define ZDATA_PRINTF_VAL pzvibValue[0], pzvibValue[1], pzvibValue[2], pzvibValue[3], pzvibValue[4], pzvibValue[5], pzvibValue[6], pzvibValue[7], pzvibValue[8], pzvibValue[9], pzvibValue[10], pzvibValue[11], pzvibValue[12], pzvibValue[13], pzvibValue[14], pzvibValue[15], pzvibValue[16], pzvibValue[17], pzvibValue[18], pzvibValue[19]
 //#define SENSOR_PUB_PRINTF(X, Y, Z) "AT+MQTTPUB=0,\"%s/%s/sensorTd\",\"{\\\"sensorTd\\\":{\\\"h5gecId\\\":\\\"%s\\\"\\,\\\"startTime\\\":\\\"%d\\\"\\,\\\"endTime\\\"\\,\\\"%d\\\"\\,\\\"tempValue\\\"\\,\\\"%.1f\\\"\\,\\\"voiceValue\\\"\\,\\\"%.1f\\\"\\,\\\"xvibValue\\\"\\,\\\""X"\\\",\\\"yvibValue\\\":\\\""Y"\\\",\\\"zvibValue\\\":\\\""Z"\\\"}}\",0,0\r\n"
-#define SENSOR_PUB_PRINTF(X, Y, Z) "{\"sensorTd\":{\"h5gecId\":\"%s\",\"startTime\":\"%d\",\"endTime\",\"%d\",\"tempValue\",\"%.1f\",\"voiceValue\",\"%.1f\",\"xvibValue\",\""X"\",\"yvibValue\",\""Y"\",\"zvibValue\",\""Z"\"}}"
+#define SENSOR_PUB_PRINTF(X, Y, Z) "{\"sensorTd\":{\"h5gecId\":\"%s\",\"startTime\":\"%ld000\",\"endTime\",\"%ld000\",\"tempValue\",\"%.1f\",\"voiceValue\",\"%.1f\",\"xvibValue\",\""X"\",\"yvibValue\",\""Y"\",\"zvibValue\",\""Z"\"}}"
 #endif
 
 sensorTd g_sensorTd;
@@ -58,7 +58,7 @@ static int esp32_mqttpubraw(char* mqttpubraw_str)
 	
 	tos_at_echo_create(&echo, echo_buffer, sizeof(echo_buffer), ">");
 	while (try++ < 10) {
-		    tos_at_cmd_exec(&echo, 15000, mqttpubraw_str);
+		    tos_at_cmd_exec_until(&echo, 15000, mqttpubraw_str);
         if (echo.status == AT_ECHO_STATUS_EXPECT) {
             return 0;
         }
@@ -103,8 +103,8 @@ int mqtt_sensor_pub()
 	uint8_t* pdevgid;
 	uint8_t* pdevuuid;
 	
-	int startTime = g_unixTime.mqtt_unix_st * 1000;
-	int endTime = g_unixTime.mqtt_unix_et * 1000;
+	long startTime = g_unixTime.mqtt_unix_st;
+	long endTime = g_unixTime.mqtt_unix_et;
 	
 	float* pxvibValue = g_sensorTd.pxvibValue;
 	float* pyvibValue = g_sensorTd.pyvibValue;
@@ -124,19 +124,13 @@ int mqtt_sensor_pub()
 //	}
 	
 	//lt:开始组json格式进行mqtt发送
-	//printf("%s", SENSOR_PUB_PRINTF(XYZDATA_PRINTF_D, XYZDATA_PRINTF_D, XYZDATA_PRINTF_D));
-//	snprintf(pmqtt_pub_sensortd_msg, MAX_MQTT_PUB_SENSORTD_MSG, 
-//	SENSOR_PUB_PRINTF(XYZDATA_PRINTF_D), 
-//	pdevgid, pdevuuid, g_sensorTd.h5gecId, startTime, endTime, g_sensorTd.tempValue, 12.2, XDATA_PRINTF_VAL);
-
-  
   snprintf(pmqtt_pub_sensortd_msg, MAX_MQTT_PUB_SENSORTD_MSG, 
 	SENSOR_PUB_PRINTF(XYZDATA_PRINTF_D, XYZDATA_PRINTF_D, XYZDATA_PRINTF_D), 
 	g_sensorTd.h5gecId, startTime, endTime, g_sensorTd.tempValue, 12.2, XDATA_PRINTF_VAL, YDATA_PRINTF_VAL, ZDATA_PRINTF_VAL);
-	printf("%s\n", pmqtt_pub_sensortd_msg);
+	//printf("%s\n", pmqtt_pub_sensortd_msg);
 	
   snprintf(mqtt_pub_topic_str, 128, "AT+MQTTPUBRAW=0,\"%s/%s/sensorTd\",%d,0,0\r\n", pdevgid, pdevuuid, strlen(pmqtt_pub_sensortd_msg));
-	printf("%s\n", mqtt_pub_topic_str);
+	//printf("%s\n", mqtt_pub_topic_str);
 	
 	if(esp32_mqttpubraw(mqtt_pub_topic_str) != 0)
 	{
@@ -150,7 +144,7 @@ int mqtt_sensor_pub()
 		return -1;
 	}
 	
-	memset(pmqtt_pub_sensortd_msg, 0, 4096);
+	memset(pmqtt_pub_sensortd_msg, 0, MAX_MQTT_PUB_SENSORTD_MSG);
 	tos_mmheap_free(pmqtt_pub_sensortd_msg);
 	pmqtt_pub_sensortd_msg = NULL;
 	

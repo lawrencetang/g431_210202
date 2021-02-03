@@ -17,6 +17,7 @@
 
 uint8_t g_u8StartOver = START_NOT_OVER;
 uint8_t g_u8MqttOver = MQTT_NOT_OVER;
+uint8_t g_u8TcpOver = TCP_NOT_OVER;
 
 /*********TASK_MAIN BEGIN***********/
 k_task_t task_main;
@@ -87,6 +88,11 @@ void task_main_entry(void *arg)
 	(void)tos_task_create(&mqttpub_task, "mqttpub_task", mqttpub_task_entry,
                           K_NULL, MQTTPUB_TASK_PRIO,
                           stack_mqttpub_task, STK_SIZE_MQTTPUB_TASK, 0);
+	
+	//lt:建立tcp发送task,堆栈空间吃紧,无法来做该task
+//	(void)tos_task_create(&tcpsend_task, "tcpsend_task", tcpsend_task_entry,
+//                          K_NULL, TCPSEND_TASK_PRIO,
+//                          stack_tcpsend_task, STK_SIZE_TCPSEND_TASK, 0);
 	printf("task create complete\n" );
 	//list_mmheap_info();
 	//lt:初始化esp32

@@ -63,14 +63,21 @@ extern k_sem_t sem_nsample_mqtt;
 extern k_sem_t sem_vsample_mqtt;
 /**********sem_vsamplemqtt end**********/
 
+/**********sample_tcpfin begin**********/
+extern uint8_t g_ttcpfin_flag;
+extern uint8_t g_ntcpfin_flag;
+extern uint8_t g_vtcpfin_flag;
+#define TCPFIN_SAMPLECNT 3
+/**********sample_tcpfin end**********/
+
 /**********unixtime begin**********/
 typedef struct _unixTime
 {
-	int mqtt_unix_st;
-  int mqtt_unix_et;
+	long mqtt_unix_st;
+  long mqtt_unix_et;
 
-  int tcp_unix_st;
-  int tcp_unix_et;
+  long tcp_unix_st;
+  long tcp_unix_et;
 }unixTime;
 
 extern unixTime g_unixTime;

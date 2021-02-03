@@ -91,6 +91,7 @@
 "g431_at\ntp.o"
 "g431_at\mqttsub.o"
 "g431_at\mqttpub.o"
+"g431_at\tcpsend.o"
 "g431_at\sal_module_wrapper.o"
 "g431_at\esp8266.o"
 --library_type=microlib --strict --scatter "g431_at\g431_at.sct"

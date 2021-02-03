@@ -57,11 +57,18 @@ void vsample_task_entry(void *arg)
 				printf("mqtt temp sample\n");
 				//lt:发送mqtt采集完成信号
 				tos_task_delay(1000);//lt:后期改全部采样,部分数据进入mqttpub的全局变量,完成mqtt的样本采集后去post
+				g_vtcpfin_flag++; //lttest
 				tos_sem_post(&sem_sample_mqttfin);
+				if(g_vtcpfin_flag > TCPFIN_SAMPLECNT)
+				{
+					break;
+				} //lttest
 			}
 	  }
 		printf("finish vib sample\n");
 		//lt:发送tcp采集完成信号
 	}
+	
+	return;
 }
 /*********VSAMPLE_TASK END***********/

@@ -20,5 +20,7 @@ void led_task_entry(void *arg)
 		HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_1);//lt:暂时调试使用
 		tos_task_delay(2000);
 	}
+	
+	return;
 }
 /*********PM_TASK END***********/

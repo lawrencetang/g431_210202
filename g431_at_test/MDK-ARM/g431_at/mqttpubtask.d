@@ -96,3 +96,4 @@ g431_at\mqttpubtask.o: ..\Board\kernel\hal\include\tos_hal.h
 g431_at\mqttpubtask.o: ..\Board\kernel\hal\include\tos_hal_sd.h
 g431_at\mqttpubtask.o: ..\Board\kernel\hal\include\tos_hal_uart.h
 g431_at\mqttpubtask.o: ..\Func\Inc\ntp.h
+g431_at\mqttpubtask.o: ..\Func\Inc\tcpsend.h

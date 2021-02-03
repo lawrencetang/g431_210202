@@ -18,6 +18,7 @@
 extern int mqtt_conn_fun();
 extern int mqtt_sub_fun();
 extern void mqttsub_init();
+extern int mqtt_clean();
 
 extern int mqtt_rev_json(char* pmessage_data);
 

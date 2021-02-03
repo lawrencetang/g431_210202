@@ -68,6 +68,7 @@ void pm_task_entry(void *arg)
 			}
     }
 	}
-
+	
+	return;
 }
 /*********PM_TASK END***********/

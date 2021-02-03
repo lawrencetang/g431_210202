@@ -15,6 +15,6 @@
 
 extern int set_sample_time();
 extern int again_set_sample_time();
-extern int get_unix_time(int* time_value);
+extern int get_unix_time(long* time_value);
 
 #endif

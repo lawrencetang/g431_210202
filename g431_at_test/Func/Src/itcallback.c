@@ -103,6 +103,7 @@ void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
 		{
 			return;
 		}
+		g_unixTime.tcp_unix_st = g_unixTime.mqtt_unix_st;
 		tos_sem_post(&sem_tsample_mqtt);
 		tos_sem_post(&sem_nsample_mqtt);
 		tos_sem_post(&sem_vsample_mqtt);

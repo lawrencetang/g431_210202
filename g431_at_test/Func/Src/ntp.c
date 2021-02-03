@@ -224,7 +224,7 @@ static int set_alarm_time(RTC_TimeTypeDef* sTime, RTC_DateTypeDef* sDate, RTC_Al
   }
 }
 
-int get_unix_time(int* time_value)
+int get_unix_time(long* time_value)
 {
 	struct tm time_tm;
 	time_t unix_time;
@@ -259,7 +259,7 @@ int get_unix_time(int* time_value)
 	unix_time = mktime(&time_tm);
 	printf("unix_time1 is %d\n", unix_time);
 	
-	*time_value = (int)unix_time;
+	*time_value = (long)unix_time;
 	
 	return 0;
 	
@@ -339,42 +339,48 @@ int set_sample_time()
 
 int again_set_sample_time()
 {
-	char time_str[MAX_TIME_STR] = {0};
-	uint8_t time_bcd[6] = {0};
-	struct tm time_tm;
+	long now_time;
+	long alarm_time;
+	struct tm* palarm_time_tm;
+	uint8_t alarm_time_bcd[6] = {0};
+	RTC_AlarmTypeDef sAlarm = {0};
 	
+	time_t unix_time;
 	
-	RTC_TimeTypeDef sTime = {0};
-  RTC_DateTypeDef sDate = {0};
-  RTC_AlarmTypeDef sAlarm = {0};
-	memset(&time_tm, 0, sizeof(time_tm));
-	
-	if(esp32_ntp_get(time_str, MAX_TIME_STR) != 0)
+	if(get_unix_time(&now_time) != 0)
 	{
-		printf("get ntp time failed\n");
 		return -1;
 	}
 	
-	printf("now time is %s\n", time_str);
+	alarm_time = now_time + 15;
+	unix_time = (time_t)alarm_time;
 	
-	if(String2BcdTime(time_str, time_bcd, &time_tm) != 0)
-	{
-		printf("strbcdtime failed");
-		return -1;
-	}
+	palarm_time_tm = localtime(&unix_time);
 	
-	printf("year is 0x%02x\n", time_bcd[4]);
-	printf("month is 0x%02x\n", time_bcd[5]);
-	printf("data is 0x%02x\n", time_bcd[0]);
-	printf("hour is 0x%02x\n", time_bcd[1]);
-	printf("min is 0x%02x\n", time_bcd[2]);
-	printf("sec is 0x%02x\n", time_bcd[3]);
+	Tm2BcdTime(palarm_time_tm, alarm_time_bcd);
 	
-	if(set_alarm_time(&sTime, &sDate, &sAlarm, time_bcd, &time_tm) != 0)
-	{
-		printf("set alarm time failed");
-		return -1;
-	}
+	printf("alarm_year is 0x%02x\n", alarm_time_bcd[4]);
+	printf("alarm_month is 0x%02x\n", alarm_time_bcd[5]);
+	printf("alarm_data is 0x%02x\n", alarm_time_bcd[0]);
+	printf("alarm_hour is 0x%02x\n", alarm_time_bcd[1]);
+	printf("alarm_min is 0x%02x\n", alarm_time_bcd[2]);
+	printf("alarm_sec is 0x%02x\n", alarm_time_bcd[3]);
+	
+	sAlarm.AlarmTime.Hours = alarm_time_bcd[1];
+	sAlarm.AlarmTime.Minutes = alarm_time_bcd[2];
+	sAlarm.AlarmTime.Seconds = alarm_time_bcd[3];
+	sAlarm.AlarmTime.SubSeconds = 0x0;
+	sAlarm.AlarmMask = RTC_ALARMMASK_NONE;
+  sAlarm.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_ALL;
+  sAlarm.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_DATE;
+  sAlarm.AlarmDateWeekDay = alarm_time_bcd[0];
+  sAlarm.Alarm = RTC_ALARM_A;
+	
+	if (HAL_RTC_SetAlarm_IT(&hrtc, &sAlarm, RTC_FORMAT_BCD) != HAL_OK)
+  {
+		printf("HAL_RTC_SetAlarm_IT failed");
+    return -1;
+  }
 	
 	return 0;
 	

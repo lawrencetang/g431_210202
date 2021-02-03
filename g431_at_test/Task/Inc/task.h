@@ -15,8 +15,13 @@
 
 #define MQTT_NOT_OVER 0x00
 #define MQTT_OVER 0X01
+
+#define TCP_NOT_OVER 0x00
+#define TCP_OVER 0x01
+
 extern uint8_t g_u8StartOver;
 extern uint8_t g_u8MqttOver;
+extern uint8_t g_u8TcpOver;
 
 /*********TASK_MAIN BEGIN***********/
 
@@ -100,6 +105,16 @@ extern k_stack_t stack_mqttpub_task[STK_SIZE_MQTTPUB_TASK];
 
 extern void mqttpub_task_entry(void *arg);
 /*********MQTTPUB_TASK END***********/
+
+/*********TCPSEND_TASK BEGIN***********/
+#define STK_SIZE_TCPSEND_TASK      512
+#define TCPSEND_TASK_PRIO      7
+
+extern k_task_t tcpsend_task;
+extern k_stack_t stack_tcpsend_task[STK_SIZE_TCPSEND_TASK];
+
+extern void tcpsend_task_entry(void *arg);
+/*********TCPSEND_TASK END***********/
 
 extern int list_mmheap_info(void);
 

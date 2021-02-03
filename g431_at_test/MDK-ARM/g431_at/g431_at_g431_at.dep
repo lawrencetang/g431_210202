@@ -96,7 +96,7 @@ I (..\Board\kernel\core\include\tos_mmheap.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_tick.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_sched.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_global.h)(0x60139F01)
-I (..\Task\Inc\task.h)(0x60180D7F)
+I (..\Task\Inc\task.h)(0x6018F984)
 I (..\Func\Inc\itcallback.h)(0x60139F02)
 F (../Core/Src/gpio.c)(0x6013B622)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\gpio.o --omf_browse g431_at\gpio.crf --depend g431_at\gpio.d)
 I (../Core/Inc/gpio.h)(0x6013B622)
@@ -4232,7 +4232,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
 I (..\AppDriver\Inc\sram.h)(0x60139EFE)
 I (../Core/Inc/spi.h)(0x6013B623)
 I (../Core/Inc/main.h)(0x6013B623)
-F (..\AppDriver\Src\bsp.c)(0x6017A771)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\bsp.o --omf_browse g431_at\bsp.crf --depend g431_at\bsp.d)
+F (..\AppDriver\Src\bsp.c)(0x6019FCF5)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\bsp.o --omf_browse g431_at\bsp.crf --depend g431_at\bsp.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -4271,7 +4271,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
-I (..\AppDriver\Inc\bsp.h)(0x6017A8FC)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
 I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_k.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_compiler.h)(0x60139F01)
@@ -4329,8 +4329,9 @@ I (..\Board\kernel\hal\include\tos_hal_sd.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal_uart.h)(0x60139F01)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (D:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5E8E2EB2)
-I (..\Func\Inc\mqttsub.h)(0x60139F02)
-I (..\Func\Inc\mqttpub.h)(0x6013C73B)
+I (..\Func\Inc\mqttsub.h)(0x6018E8B9)
+I (..\Func\Inc\mqttpub.h)(0x601A10AB)
+I (..\Func\Inc\tcpsend.h)(0x601A0A0B)
 F (..\AppDriver\Src\esp32.c)(0x60139EFE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\esp32.o --omf_browse g431_at\esp32.crf --depend g431_at\esp32.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
@@ -4425,8 +4426,8 @@ I (..\Board\kernel\hal\include\tos_hal_uart.h)(0x60139F01)
 I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
 I (..\Board\net\at\include\tos_at.h)(0x60139F01)
 I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
-I (..\Func\Inc\mqttsub.h)(0x60139F02)
-I (..\AppDriver\Inc\bsp.h)(0x6017A8FC)
+I (..\Func\Inc\mqttsub.h)(0x6018E8B9)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (D:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5E8E2EB2)
 F (..\AppDriver\Src\battery.c)(0x6013E30E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\battery.o --omf_browse g431_at\battery.crf --depend g431_at\battery.d)
@@ -4605,7 +4606,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
 I (../Core/Inc/i2c.h)(0x6013B622)
 I (../Core/Inc/main.h)(0x6013B623)
-F (..\Task\Src\task.c)(0x6017A541)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\task.o --omf_browse g431_at\task.crf --depend g431_at\task.d)
+F (..\Task\Src\task.c)(0x6018FA4E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\task.o --omf_browse g431_at\task.crf --depend g431_at\task.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -4644,7 +4645,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
-I (..\Task\Inc\task.h)(0x60180D7F)
+I (..\Task\Inc\task.h)(0x6018F984)
 I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_k.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_compiler.h)(0x60139F01)
@@ -4700,14 +4701,14 @@ I (..\Board\net\at\include\tos_at.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal_sd.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal_uart.h)(0x60139F01)
-I (..\AppDriver\Inc\bsp.h)(0x6017A8FC)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
 I (..\Func\Inc\ble.h)(0x60139F02)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (D:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5E8E2EB2)
-I (..\Func\Inc\ntp.h)(0x6017ACD4)
+I (..\Func\Inc\ntp.h)(0x601A19AA)
 I (..\AppDriver\Inc\esp32.h)(0x60139EFE)
 I (..\Func\Inc\itcallback.h)(0x60139F02)
-F (..\Task\Src\pmtask.c)(0x6013E412)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\pmtask.o --omf_browse g431_at\pmtask.crf --depend g431_at\pmtask.d)
+F (..\Task\Src\pmtask.c)(0x6018C3F8)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\pmtask.o --omf_browse g431_at\pmtask.crf --depend g431_at\pmtask.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -4746,7 +4747,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
-I (..\Task\Inc\task.h)(0x60180D7F)
+I (..\Task\Inc\task.h)(0x6018F984)
 I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_k.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_compiler.h)(0x60139F01)
@@ -4796,8 +4797,8 @@ I (..\Board\kernel\core\include\tos_mmheap.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_tick.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_sched.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_global.h)(0x60139F01)
-I (..\AppDriver\Inc\bsp.h)(0x6017A8FC)
-I (..\Func\Inc\mqttpub.h)(0x6013C73B)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
+I (..\Func\Inc\mqttpub.h)(0x601A10AB)
 I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
 I (..\Board\net\at\include\tos_at.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal.h)(0x60139F01)
@@ -4806,7 +4807,7 @@ I (..\Board\kernel\hal\include\tos_hal_uart.h)(0x60139F01)
 I (..\AppDriver\Inc\battery.h)(0x6013A594)
 I (../Core/Inc/adc.h)(0x6013B622)
 I (../Core/Inc/main.h)(0x6013B623)
-F (..\Task\Src\ledtask.c)(0x6013E0D7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\ledtask.o --omf_browse g431_at\ledtask.crf --depend g431_at\ledtask.d)
+F (..\Task\Src\ledtask.c)(0x6018BDD6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\ledtask.o --omf_browse g431_at\ledtask.crf --depend g431_at\ledtask.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -4845,7 +4846,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
-I (..\Task\Inc\task.h)(0x60180D7F)
+I (..\Task\Inc\task.h)(0x6018F984)
 I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_k.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_compiler.h)(0x60139F01)
@@ -4896,7 +4897,7 @@ I (..\Board\kernel\core\include\tos_tick.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_sched.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_global.h)(0x60139F01)
 I (../Core/Inc/main.h)(0x6013B623)
-F (..\Task\Src\tsampletask.c)(0x60179304)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\tsampletask.o --omf_browse g431_at\tsampletask.crf --depend g431_at\tsampletask.d)
+F (..\Task\Src\tsampletask.c)(0x6018F57C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\tsampletask.o --omf_browse g431_at\tsampletask.crf --depend g431_at\tsampletask.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -4935,7 +4936,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
-I (..\Task\Inc\task.h)(0x60180D7F)
+I (..\Task\Inc\task.h)(0x6018F984)
 I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_k.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_compiler.h)(0x60139F01)
@@ -4985,8 +4986,8 @@ I (..\Board\kernel\core\include\tos_mmheap.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_tick.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_sched.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_global.h)(0x60139F01)
-I (..\AppDriver\Inc\bsp.h)(0x6017A8FC)
-I (..\Func\Inc\mqttpub.h)(0x6013C73B)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
+I (..\Func\Inc\mqttpub.h)(0x601A10AB)
 I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
 I (..\Board\net\at\include\tos_at.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal.h)(0x60139F01)
@@ -4995,7 +4996,7 @@ I (..\Board\kernel\hal\include\tos_hal_uart.h)(0x60139F01)
 I (..\AppDriver\Inc\STTS75_driver.h)(0x6013A597)
 I (../Core/Inc/i2c.h)(0x6013B622)
 I (../Core/Inc/main.h)(0x6013B623)
-F (..\Task\Src\mqttsubtask.c)(0x6013D5BF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\mqttsubtask.o --omf_browse g431_at\mqttsubtask.crf --depend g431_at\mqttsubtask.d)
+F (..\Task\Src\mqttsubtask.c)(0x6018F98D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\mqttsubtask.o --omf_browse g431_at\mqttsubtask.crf --depend g431_at\mqttsubtask.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -5034,7 +5035,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
-I (..\Task\Inc\task.h)(0x60180D7F)
+I (..\Task\Inc\task.h)(0x6018F984)
 I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_k.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_compiler.h)(0x60139F01)
@@ -5084,14 +5085,15 @@ I (..\Board\kernel\core\include\tos_mmheap.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_tick.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_sched.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_global.h)(0x60139F01)
-I (..\AppDriver\Inc\bsp.h)(0x6017A8FC)
-I (..\Func\Inc\mqttsub.h)(0x60139F02)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
+I (..\Func\Inc\mqttsub.h)(0x6018E8B9)
 I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
 I (..\Board\net\at\include\tos_at.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal_sd.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal_uart.h)(0x60139F01)
-F (..\Task\Src\nsampletask.c)(0x60179343)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\nsampletask.o --omf_browse g431_at\nsampletask.crf --depend g431_at\nsampletask.d)
+I (..\Func\Inc\tcpsend.h)(0x601A0A0B)
+F (..\Task\Src\nsampletask.c)(0x6018F577)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\nsampletask.o --omf_browse g431_at\nsampletask.crf --depend g431_at\nsampletask.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -5130,7 +5132,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
-I (..\Task\Inc\task.h)(0x60180D7F)
+I (..\Task\Inc\task.h)(0x6018F984)
 I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_k.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_compiler.h)(0x60139F01)
@@ -5180,14 +5182,14 @@ I (..\Board\kernel\core\include\tos_mmheap.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_tick.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_sched.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_global.h)(0x60139F01)
-I (..\AppDriver\Inc\bsp.h)(0x6017A8FC)
-I (..\Func\Inc\mqttpub.h)(0x6013C73B)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
+I (..\Func\Inc\mqttpub.h)(0x601A10AB)
 I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
 I (..\Board\net\at\include\tos_at.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal_sd.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal_uart.h)(0x60139F01)
-F (..\Task\Src\vsampletask.c)(0x60179349)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\vsampletask.o --omf_browse g431_at\vsampletask.crf --depend g431_at\vsampletask.d)
+F (..\Task\Src\vsampletask.c)(0x6018F573)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\vsampletask.o --omf_browse g431_at\vsampletask.crf --depend g431_at\vsampletask.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -5226,7 +5228,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
-I (..\Task\Inc\task.h)(0x60180D7F)
+I (..\Task\Inc\task.h)(0x6018F984)
 I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_k.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_compiler.h)(0x60139F01)
@@ -5276,8 +5278,8 @@ I (..\Board\kernel\core\include\tos_mmheap.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_tick.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_sched.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_global.h)(0x60139F01)
-I (..\AppDriver\Inc\bsp.h)(0x6017A8FC)
-I (..\Func\Inc\mqttpub.h)(0x6013C73B)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
+I (..\Func\Inc\mqttpub.h)(0x601A10AB)
 I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
 I (..\Board\net\at\include\tos_at.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal.h)(0x60139F01)
@@ -5286,7 +5288,7 @@ I (..\Board\kernel\hal\include\tos_hal_uart.h)(0x60139F01)
 I (..\AppDriver\Inc\LIS2DS12_ACC_driver.h)(0x6013B3BB)
 I (../Core/Inc/i2c.h)(0x6013B622)
 I (../Core/Inc/main.h)(0x6013B623)
-F (..\Task\Src\mqttpubtask.c)(0x6017AB7B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\mqttpubtask.o --omf_browse g431_at\mqttpubtask.crf --depend g431_at\mqttpubtask.d)
+F (..\Task\Src\mqttpubtask.c)(0x601A1376)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\mqttpubtask.o --omf_browse g431_at\mqttpubtask.crf --depend g431_at\mqttpubtask.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -5325,7 +5327,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
-I (..\Task\Inc\task.h)(0x60180D7F)
+I (..\Task\Inc\task.h)(0x6018F984)
 I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_k.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_compiler.h)(0x60139F01)
@@ -5375,14 +5377,15 @@ I (..\Board\kernel\core\include\tos_mmheap.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_tick.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_sched.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_global.h)(0x60139F01)
-I (..\AppDriver\Inc\bsp.h)(0x6017A8FC)
-I (..\Func\Inc\mqttpub.h)(0x6013C73B)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
+I (..\Func\Inc\mqttpub.h)(0x601A10AB)
 I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
 I (..\Board\net\at\include\tos_at.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal_sd.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal_uart.h)(0x60139F01)
-I (..\Func\Inc\ntp.h)(0x6017ACD4)
+I (..\Func\Inc\ntp.h)(0x601A19AA)
+I (..\Func\Inc\tcpsend.h)(0x601A0A0B)
 F (..\Board\net\at\src\tos_at.c)(0x60139F01)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\tos_at.o --omf_browse g431_at\tos_at.crf --depend g431_at\tos_at.d)
 I (..\Board\net\at\include\tos_at.h)(0x60139F01)
 I (..\Board\kernel\core\include\tos_k.h)(0x60139F01)
@@ -5566,7 +5569,7 @@ I (..\Board\kernel\hal\include\tos_hal_sd.h)(0x60139F01)
 I (..\Board\kernel\hal\include\tos_hal_uart.h)(0x60139F01)
 I (../Core/Inc/usart.h)(0x6013B623)
 I (../Core/Inc/main.h)(0x6013B623)
-F (..\Func\Src\itcallback.c)(0x6017AB81)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\itcallback.o --omf_browse g431_at\itcallback.crf --depend g431_at\itcallback.d)
+F (..\Func\Src\itcallback.c)(0x6018FE31)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\itcallback.o --omf_browse g431_at\itcallback.crf --depend g431_at\itcallback.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -5665,11 +5668,11 @@ I (..\AppDriver\Inc\include.h)(0x60139EFE)
 I (D:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5E8E2EB2)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5E8E2EB2)
 I (D:\Keil_v5\ARM\ARMCC\include\time.h)(0x5E8E2EB2)
-I (..\Task\Inc\task.h)(0x60180D7F)
+I (..\Task\Inc\task.h)(0x6018F984)
 I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
-I (..\Func\Inc\ntp.h)(0x6017ACD4)
+I (..\Func\Inc\ntp.h)(0x601A19AA)
 I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
-I (..\AppDriver\Inc\bsp.h)(0x6017A8FC)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
 F (..\Func\Src\wifi.c)(0x60139F02)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\wifi.o --omf_browse g431_at\wifi.crf --depend g431_at\wifi.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
@@ -5963,7 +5966,7 @@ I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (D:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5E8E2EB2)
 I (..\AppDriver\Inc\esp32.h)(0x60139EFE)
-F (..\Func\Src\ntp.c)(0x6017ADC4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\ntp.o --omf_browse g431_at\ntp.crf --depend g431_at\ntp.d)
+F (..\Func\Src\ntp.c)(0x601A1A1C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\ntp.o --omf_browse g431_at\ntp.crf --depend g431_at\ntp.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -6002,7 +6005,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
-I (..\Func\Inc\ntp.h)(0x6017ACD4)
+I (..\Func\Inc\ntp.h)(0x601A19AA)
 I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (..\Board\net\at\include\tos_at.h)(0x60139F01)
@@ -6064,7 +6067,7 @@ I (..\AppDriver\Inc\include.h)(0x60139EFE)
 I (D:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5E8E2EB2)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5E8E2EB2)
 I (D:\Keil_v5\ARM\ARMCC\include\time.h)(0x5E8E2EB2)
-F (..\Func\Src\mqttsub.c)(0x60177330)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\mqttsub.o --omf_browse g431_at\mqttsub.crf --depend g431_at\mqttsub.d)
+F (..\Func\Src\mqttsub.c)(0x6018E880)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\mqttsub.o --omf_browse g431_at\mqttsub.crf --depend g431_at\mqttsub.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -6103,7 +6106,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
-I (..\Func\Inc\mqttsub.h)(0x60139F02)
+I (..\Func\Inc\mqttsub.h)(0x6018E8B9)
 I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (..\Board\net\at\include\tos_at.h)(0x60139F01)
@@ -6165,9 +6168,9 @@ I (D:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5E8E2EB2)
 I (..\AppDriver\Inc\include.h)(0x60139EFE)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5E8E2EB2)
 I (D:\Keil_v5\ARM\ARMCC\include\time.h)(0x5E8E2EB2)
-I (..\AppDriver\Inc\bsp.h)(0x6017A8FC)
-I (..\Task\Inc\task.h)(0x60180D7F)
-F (..\Func\Src\mqttpub.c)(0x60180C78)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\mqttpub.o --omf_browse g431_at\mqttpub.crf --depend g431_at\mqttpub.d)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
+I (..\Task\Inc\task.h)(0x6018F984)
+F (..\Func\Src\mqttpub.c)(0x601A2370)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\mqttpub.o --omf_browse g431_at\mqttpub.crf --depend g431_at\mqttpub.d)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
@@ -6206,7 +6209,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
-I (..\Func\Inc\mqttpub.h)(0x6013C73B)
+I (..\Func\Inc\mqttpub.h)(0x601A10AB)
 I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (..\Board\net\at\include\tos_at.h)(0x60139F01)
@@ -6266,9 +6269,112 @@ I (..\AppDriver\Inc\include.h)(0x60139EFE)
 I (D:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5E8E2EB2)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5E8E2EB2)
 I (D:\Keil_v5\ARM\ARMCC\include\time.h)(0x5E8E2EB2)
-I (..\AppDriver\Inc\bsp.h)(0x6017A8FC)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
 I (..\Func\Inc\fs.h)(0x60139F02)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
+F (..\Func\Src\tcpsend.c)(0x601A2383)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\tcpsend.o --omf_browse g431_at\tcpsend.crf --depend g431_at\tcpsend.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x5FDAF76E)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x6013B623)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x5FDAF76E)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x5FDAF769)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x5FDAF769)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5FDAF76E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5FDAF76E)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5FDAF76E)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5FDAF76E)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5FDAF76E)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x5FDAF769)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5FDAF76E)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc_ex.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c_ex.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc_ex.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x5FDAF76E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x5FDAF76E)
+I (..\Func\Inc\tcpsend.h)(0x601A0A0B)
+I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (..\Board\net\at\include\tos_at.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_k.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_compiler.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_kerr.h)(0x60139F01)
+I (..\Board\arch\arm\arm-v7m\common\include\tos_cpu_def.h)(0x60139EFF)
+I (..\Board\TOS_CONFIG\tos_config.h)(0x60139EFE)
+I (..\Board\kernel\core\include\tos_config_default.h)(0x60139F01)
+I (..\Board\arch\arm\arm-v7m\cortex-m4\armcc\port_config.h)(0x60139EFF)
+I (..\Board\kernel\core\include\tos_config_check.h)(0x60139F01)
+I (..\Board\arch\arm\arm-v7m\common\include\tos_cpu_types.h)(0x60139EFF)
+I (..\Board\kernel\core\include\tos_ktypes.h)(0x60139F01)
+I (..\Board\arch\arm\arm-v7m\cortex-m4\armcc\port.h)(0x60139EFF)
+I (..\Board\arch\arm\arm-v7m\common\include\tos_cpu.h)(0x60139EFF)
+I (..\Board\arch\arm\arm-v7m\common\include\tos_fault.h)(0x60139EFF)
+I (..\Board\kernel\core\include\tos_klib.h)(0x60139F01)
+I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (..\Board\kernel\core\include\tos_list.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_slist.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_pend.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_sys.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_bitmap.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_ring_queue.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_char_fifo.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_mail_queue.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_message_queue.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_binary_heap.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_priority_queue.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_priority_mail_queue.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_priority_message_queue.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_task.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_robin.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_mutex.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_sem.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_event.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_barrier.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_completion.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_countdownlatch.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_rwlock.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_timer.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_time.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_stopwatch.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_mmblk.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_mmheap.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_tick.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_sched.h)(0x60139F01)
+I (..\Board\kernel\core\include\tos_global.h)(0x60139F01)
+I (..\Board\kernel\hal\include\tos_hal.h)(0x60139F01)
+I (..\Board\kernel\hal\include\tos_hal_sd.h)(0x60139F01)
+I (..\Board\kernel\hal\include\tos_hal_uart.h)(0x60139F01)
+I (..\AppDriver\Inc\esp32.h)(0x60139EFE)
+I (..\Board\osal\cmsis_os\cmsis_os.h)(0x60139F01)
+I (..\AppDriver\Inc\include.h)(0x60139EFE)
+I (D:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5E8E2EB2)
+I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5E8E2EB2)
+I (D:\Keil_v5\ARM\ARMCC\include\time.h)(0x5E8E2EB2)
+I (..\AppDriver\Inc\bsp.h)(0x601A19C0)
+I (..\Func\Inc\fs.h)(0x60139F02)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
+I (..\Func\Inc\mqttpub.h)(0x601A10AB)
 F (..\Board\net\sal_module_wrapper\sal_module_wrapper.c)(0x60139F01)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ..\Board\arch\arm\arm-v7m\common\include -I ..\Board\arch\arm\arm-v7m\cortex-m4\armcc -I ..\Board\kernel\core\include -I ..\Board\osal\cmsis_os -I ..\Board\TOS_CONFIG -I ..\AppDriver\Inc -I ..\Task\Inc -I ..\Board\net\at\include -I ..\Board\kernel\hal\include -I ..\Func\Inc -I ..\Func\Inc -I ..\Board\net\sal_module_wrapper -I ..\Board\devices\esp8266 -I ..\Board\security\mbedtls\wrapper\include -I ..\Board\security\mbedtls\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\include\exports -I ..\Board\connectivity\qcloud-iot-explorer-sdk\3rdparty\sdk_src\internal_inc-I.\RTE\_g431_at-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DMBEDTLS_CONFIG_FILE="<qcloud/tls_psk_config.h>"-o g431_at\sal_module_wrapper.o --omf_browse g431_at\sal_module_wrapper.crf --depend g431_at\sal_module_wrapper.d)
 I (..\Board\net\sal_module_wrapper\sal_module_wrapper.h)(0x60139F01)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)

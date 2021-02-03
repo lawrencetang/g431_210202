@@ -90,6 +90,20 @@ static int esp32_mqttsub(char* mqttsub_str)
     return -1;
 }
 
+static int esp32_mqtt_clean()
+{
+	at_echo_t echo;
+	
+	tos_at_echo_create(&echo, NULL, 0, "OK");
+	tos_at_cmd_exec_until(&echo, 15000, "AT+MQTTCLEAN=0\r\n");
+	
+	if (echo.status == AT_ECHO_STATUS_EXPECT) {
+            return 0;
+        }
+	return -1;
+		
+}
+
 int mqtt_sub_fun()
 {
 	uint8_t* pdevgid;
@@ -157,6 +171,15 @@ int mqtt_conn_fun()
 	
 	return 0;
 	
+}
+
+int mqtt_clean()
+{
+	if(esp32_mqtt_clean() != 0)
+	{
+		return -1;
+	}
+	return 0;
 }
 
 static void json_get_para(char* para_value, char* para_str, char* ref_str)

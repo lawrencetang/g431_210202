@@ -903,6 +903,11 @@
               <FileType>1</FileType>
               <FilePath>..\Func\Src\mqttpub.c</FilePath>
             </File>
+            <File>
+              <FileName>tcpsend.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Func\Src\tcpsend.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

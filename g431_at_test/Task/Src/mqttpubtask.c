@@ -10,6 +10,7 @@
 #include "bsp.h"
 #include "mqttpub.h"
 #include "ntp.h"
+#include "tcpsend.h"
 
 /*********MQTTPUB_TASK BEGIN***********/
 k_task_t mqttpub_task;
@@ -33,13 +34,58 @@ void mqttpub_task_entry(void *arg)
 		{
 			if(flag_match == ev_normal_pub)
 			{
+				if(g_ttcpfin_flag > TCPFIN_SAMPLECNT && g_ntcpfin_flag > TCPFIN_SAMPLECNT && g_vtcpfin_flag > TCPFIN_SAMPLECNT)
+				{
+					//lt:先发布mqtt数据,再发布tcp数据,发完清空相关buffer,break,等待下次RTC或者唤醒
+					//printf("publish normal data\n");
+					if(get_unix_time(&g_unixTime.mqtt_unix_et) != 0)
+		      {
+			      return;
+		      }//lt:采集完成获得unix时间
+					//printf("ready send tcp data");
+					//lt:发送tcp
+					if(g_u8TcpOver == TCP_OVER)
+					{
+						tcp_send_sersonTd();
+					}
+					else
+					{
+						//lt:关闭tcp传输
+						tcp_close();
+					}
+					tos_task_delay(1000);//lt:延时1000ms去申请mqtt发送
+					if(g_u8MqttOver == MQTT_OVER)
+					{
+						mqtt_sensor_pub();
+					}
+					//lt:释放传感器buffer
+					tos_mmheap_free(g_sensorTd.pxvibValue);
+					g_sensorTd.pxvibValue = NULL;
+					tos_mmheap_free(g_sensorTd.pyvibValue);
+					g_sensorTd.pyvibValue = NULL;
+					tos_mmheap_free(g_sensorTd.pzvibValue);
+					g_sensorTd.pzvibValue = NULL;
+					//lt:重新设置RTC时间
+					if(again_set_sample_time() != 0)
+					{
+						return;
+					}
+					//lt:复位测试标志
+					g_ttcpfin_flag = 0;
+					g_ntcpfin_flag = 0;
+					g_vtcpfin_flag = 0;
+					continue;
+				}
 				//lt:发布正常数据
-				printf("publish normal data\n");
+				//printf("publish normal data\n");
 				if(get_unix_time(&g_unixTime.mqtt_unix_et) != 0)
 		    {
 			    return;
 		    }//lt:采集完成获得unix时间
-				mqtt_sensor_pub();
+				if(g_u8MqttOver == MQTT_OVER)
+				{
+					mqtt_sensor_pub();
+				}
 				//lt:延时10ms去再次申请mqtt采集发送
 				tos_task_delay(10);
 				if(get_unix_time(&g_unixTime.mqtt_unix_st) != 0)
@@ -55,8 +101,11 @@ void mqttpub_task_entry(void *arg)
 			{
 				//lt:发布异常数据
 				//lt:检查mqtt的连接的状态
-				printf("publish exce data\n");
-				mqtt_alarms_pub();
+				//printf("publish exce data\n");
+				if(g_u8MqttOver == MQTT_OVER)
+				{
+					mqtt_alarms_pub();
+				}
 			}
 			
 			if(flag_match == ev_para_pub)
@@ -65,6 +114,7 @@ void mqttpub_task_entry(void *arg)
 			}
 		}
 	}
+	return;
 }
 
 /*********MQTTPUB_TASK END***********/

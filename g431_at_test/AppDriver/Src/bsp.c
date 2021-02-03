@@ -10,6 +10,7 @@
 #include "fs.h"
 #include "mqttsub.h"
 #include "mqttpub.h"
+#include "tcpsend.h"
 
 k_sem_t sem_mqttrev_fin;
 k_sem_t sem_mqttrev_en;
@@ -66,6 +67,12 @@ k_sem_t sem_vsample_mqtt;
 unixTime g_unixTime;
 /**********unixtime end**********/
 
+/**********sample_tcpfin begin**********/
+uint8_t g_ttcpfin_flag = 0;
+uint8_t g_ntcpfin_flag = 0;
+uint8_t g_vtcpfin_flag = 0;
+/**********sample_tcpfin end**********/
+
 void TimeInit()
 {
 	g_unixTime.mqtt_unix_et = 0;
@@ -108,6 +115,7 @@ void DevInit()
 	fs_init();
 	mqttsub_init();
 	mqttpub_init();
+	tcp_init();
 	SemInit();
 	EventInit();
 	GpioInit();
