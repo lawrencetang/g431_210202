@@ -53,12 +53,15 @@ void mqttpub_task_entry(void *arg)
 						//lt:关闭tcp传输
 						tcp_close();
 					}
-					tos_task_delay(1000);//lt:延时1000ms去申请mqtt发送
-					if(g_u8MqttOver == MQTT_OVER)
-					{
-						mqtt_sensor_pub();
-					}
+					tos_task_delay(50);//lt:延时50ms去申请mqtt发送
+//					if(g_u8MqttOver == MQTT_OVER)
+//					{
+//						mqtt_sensor_pub();
+//					}
 					//lt:释放传感器buffer
+				  memset(g_sensorTd.pxvibValue, 0, sizeof(float) * MAX_XYZSAMPLE_CNT);
+	        memset(g_sensorTd.pyvibValue, 0, sizeof(float) * MAX_XYZSAMPLE_CNT);
+	        memset(g_sensorTd.pzvibValue, 0, sizeof(float) * MAX_XYZSAMPLE_CNT);
 					tos_mmheap_free(g_sensorTd.pxvibValue);
 					g_sensorTd.pxvibValue = NULL;
 					tos_mmheap_free(g_sensorTd.pyvibValue);

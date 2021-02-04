@@ -54,6 +54,8 @@ void mqttsub_task_entry(void *arg)
 		printf("can not conn tcp");
 		//lt: Õ∑≈mqtt¡¨Ω”
 		mqtt_clean();
+		g_u8MqttOver = TCP_NOT_OVER;
+		g_u8TcpOver = TCP_NOT_OVER;
 		return;
 	}
 	

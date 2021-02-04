@@ -116,7 +116,7 @@ int mqtt_sub_fun()
 	
 	//lt:开始订阅消息
 	//lt:构造MQTTSUB参数字符串
-	snprintf(mqttsub_str, MAX_MQTTSUB_STR, "AT+MQTTSUB=0,\"%s/%s/samplePara\",0\r\n", pdevgid, pdevuuid);
+	snprintf(mqttsub_str, MAX_MQTTSUB_STR, "AT+MQTTSUB=0,\"%s/%s/1354375985022951426\",0\r\n", pdevgid, pdevuuid);
 	if(esp32_mqttsub(mqttsub_str) != 0)
 	{
 		printf("sub mqtt failed");
@@ -125,7 +125,7 @@ int mqtt_sub_fun()
 	
 	tos_task_delay(500);
 	memset(mqttsub_str, 0, MAX_MQTTSUB_STR + 1);
-	snprintf(mqttsub_str, MAX_MQTTSUB_STR, "AT+MQTTSUB=0,\"%s/%s/collControl\",0\r\n", pdevgid, pdevuuid);
+	snprintf(mqttsub_str, MAX_MQTTSUB_STR, "AT+MQTTSUB=0,\"%s/%s/1354375987082354689\",0\r\n", pdevgid, pdevuuid);
 	
 	if(esp32_mqttsub(mqttsub_str) != 0)
 	{
